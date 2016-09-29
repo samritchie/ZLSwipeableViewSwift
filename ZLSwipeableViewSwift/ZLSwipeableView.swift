@@ -37,11 +37,7 @@ open class ZLSwipeableView: UIView {
 
     // MARK: Data Source
     open var numberOfActiveView = UInt(4)
-    open var nextView: NextViewHandler? {
-        didSet {
-            loadViews()
-        }
-    }
+    open var nextView: NextViewHandler?
     open var previousView: PreviousViewHandler?
     // Rewinding
     open var history = [UIView]()
